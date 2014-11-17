@@ -66,38 +66,7 @@
     transition: opacity 0.2s linear;
     opacity: 0.2;
 }
-.slider-wrapper:hover #slider-control-nav { opacity: 1; }
-#slider-control-nav a {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background: url(images/bullets.png) no-repeat 0 0;
-    text-indent: -9999px;
-    margin: 0 3px;
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-}
+
 #slider-control-nav a.active { background-position: 100% 0; }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-width : 480px) {
-
-    #slider-direction-nav,
-	#slider-control-nav { opacity: 1; }
-
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-	
-	#slider-direction-nav,
-	#slider-control-nav { opacity: 1; }
-
-}
+/
