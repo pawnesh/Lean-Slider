@@ -1,5 +1,5 @@
 /*
- * Lean Slider v1.0.1
+ * Lean Slider v1.0.2
  * http://dev7studios.com/lean-slider
  *
  * Copyright 2012, Dev7studios
@@ -54,7 +54,9 @@
             // Set up controlNav
             if(settings.controlNav && $(settings.controlNav).length){
                 slides.each(function(i){
-                    var controlNav = $('<a href="#" class="lean-slider-control-nav">'+ (i + 1) +'</a>');
+                    var image = $(this).find('img');
+                    image = $(image).attr('src');
+                    var controlNav = $('<a href="#" class="lean-slider-control-nav"><img src="'+image+'" width="100px"/></a>');
                     if(settings.controlNavBuilder) controlNav = $(settings.controlNavBuilder.call(this, i, $(slides[i])));
 
                     controlNav.on('click', function(e){
