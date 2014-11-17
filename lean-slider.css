@@ -5,7 +5,7 @@
  * Copyright 2012, Dev7studios
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- */
+*/
 
 .lean-slider {
     position: relative;
@@ -27,3 +27,35 @@
     display: none;
 }
 .lean-slider-slide.current { display: block; }
+
+.slider-wrapper:hover #slider-control-nav { opacity: 1; }
+#slider-control-nav a {
+    width: 14px;
+    height: 14px;
+    margin: 0 3px;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-width : 480px) {
+
+    #slider-direction-nav,
+	#slider-control-nav { opacity: 1; }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+	#slider-direction-nav,
+	#slider-control-nav { opacity: 1; }
+
+}
